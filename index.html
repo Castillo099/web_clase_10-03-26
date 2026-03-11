@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arábica | Café de Especialidad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#" class="logo">Arábica</a>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="mobile-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <p class="hero-subtitle">Est. 2024</p>
+            <h1>El Arte del Café Perfecto</h1>
+            <p class="hero-description">
+                Descubre la excelencia en cada taza. Seleccionamos los mejores granos de origen único 
+                y los tostamos con precisión artesanal para ofrecerte una experiencia sensorial incomparable.
+            </p>
+            <div class="hero-buttons">
+                <a href="#menu" class="cta-button">Ver Menú</a>
+                <a href="#contacto" class="cta-button cta-secondary">Reservar Mesa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about fade-in">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80" alt="Barista preparando café">
+        </div>
+        <div class="about-content">
+            <span class="section-tag">Nuestra Historia</span>
+            <h2>Tradición y Pasión en Cada Grano</h2>
+            <p>
+                En Arábica, creemos que el café es más que una bebida: es un ritual, un momento de conexión 
+                y una expresión de cultura. Desde 2024, hemos dedicado nuestros días a perfeccionar 
+                cada aspecto del proceso, desde la selección de granos hasta el último sorbo.
+            </p>
+            <p>
+                Trabajamos directamente con agricultores de América Latina y África, asegurando 
+                prácticas sostenibles y precios justos. Nuestro maestro tostador cuenta con más de 
+                15 años de experiencia, extrayendo los perfiles de sabor más complejos de cada variedad.
+            </p>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Orígenes de café</p>
+                </div>
+                <div class="stat-item">
+                    <h3>3</h3>
+                    <p>Tostadores certificados</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Comercio directo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section fade-in">
+        <div class="section-header">
+            <span class="section-tag">Especialidades</span>
+            <h2 class="section-title">Nuestro Menú</h2>
+            <p class="section-subtitle">
+                Cada bebida es preparada con precisión y dedicación, utilizando granos recién tostados 
+                y técnicas de extracción cuidadosamente calibradas.
+            </p>
+        </div>
+        
+        <div class="menu-grid">
+            <div class="menu-category">
+                <h3>Cafés Clásicos</h3>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Espresso</h4>
+                        <p>Intenso y cremoso, 30ml de pureza</p>
+                    </div>
+                    <span class="menu-item-price">$3.50</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Americano</h4>
+                        <p>Doble espresso con agua caliente</p>
+                    </div>
+                    <span class="menu-item-price">$4.00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Cortado</h4>
+                        <p>Equilibrio perfecto espresso y leche</p>
+                    </div>
+                    <span class="menu-item-price">$4.50</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Cappuccino</h4>
+                        <p>Espresso, leche vaporizada y espuma</p>
+                    </div>
+                    <span class="menu-item-price">$5.00</span>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Especialidades</h3>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Pour Over V60</h4>
+                        <p>Método manual, origen del día</p>
+                    </div>
+                    <span class="menu-item-price">$6.50</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Cold Brew</h4>
+                        <p>Extracción fría 24 horas, suave y dulce</p>
+                    </div>
+                    <span class="menu-item-price">$5.50</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Flat White</h4>
+                        <p>Doble ristretto, microespuma sedosa</p>
+                    </div>
+                    <span class="menu-item-price">$5.50</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Affogato</h4>
+                        <p>Helado de vainilla con espresso caliente</p>
+                    </div>
+                    <span class="menu-item-price">$6.00</span>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>Panadería</h3>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Croissant</h4>
+                        <p>Mantequilla francesa, hojaldre perfecto</p>
+                    </div>
+                    <span class="menu-item-price">$3.50</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Cinnamon Roll</h4>
+                        <p>Glaseado de queso crema, receta secreta</p>
+                    </div>
+                    <span class="menu-item-price">$4.50</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Avocado Toast</h4>
+                        <p>Pan artesanal, aguacate, semillas</p>
+                    </div>
+                    <span class="menu-item-price">$8.00</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <h4>Tarta del Día</h4>
+                        <p>Variedad rotativa, consulta disponibilidad</p>
+                    </div>
+                    <span class="menu-item-price">$6.50</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="fade-in">
+        <div class="section-header">
+            <span class="section-tag">Ambiente</span>
+            <h2 class="section-title">Nuestro Espacio</h2>
+            <p class="section-subtitle">
+                Un refugio urbano diseñado para la contemplación, el trabajo y la buena compañía.
+            </p>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Latte art">
+                <div class="image-overlay-text">
+                    <h4>Latte Art</h4>
+                    <p>Cada taza es una obra de arte</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=800&q=80" alt="Interior de cafetería">
+                <div class="image-overlay-text">
+                    <h4>Nuestro Local</h4>
+                    <p>Diseño minimalista y acogedor</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80" alt="Granos de café">
+                <div class="image-overlay-text">
+                    <h4>Selección</h4>
+                    <p>Granos de origen único</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Preparación de café">
+                <div class="image-overlay-text">
+                    <h4>Preparación</h4>
+                    <p>Métodos tradicionales</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Cold brew">
+                <div class="image-overlay-text">
+                    <h4>Cold Brew</h4>
+                    <p>Perfección en frío</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1507133750069-69d3cdad863a?w=600&q=80" alt="Pastelería">
+                <div class="image-overlay-text">
+                    <h4>Repostería</h4>
+                    <p>El complemento perfecto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact fade-in">
+        <div class="contact-info">
+            <span class="section-tag">Visítanos</span>
+            <h3>Estamos Aquí</h3>
+            
+            <div class="contact-detail">
+                <h4>Dirección</h4>
+                <p>Calle del Café 42, Centro Histórico<br>Ciudad de México, CP 06000</p>
+            </div>
+            
+            <div class="contact-detail">
+                <h4>Horario</h4>
+                <p>Lunes - Viernes: 7:00 - 21:00<br>Sábado - Domingo: 8:00 - 22:00</p>
+            </div>
+            
+            <div class="contact-detail">
+                <h4>Contacto</h4>
+                <p>hola@arabica.coffee<br>+52 55 1234 5678</p>
+            </div>
+
+            <form class="contact-form" onsubmit="handleSubmit(event)" style="margin-top: 3rem;">
+                <div class="form-group">
+                    <input type="text" id="nombre" placeholder=" " required>
+                    <label for="nombre">Nombre completo</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label for="email">Correo electrónico</label>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="telefono" placeholder=" ">
+                    <label for="telefono">Teléfono</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="mensaje" placeholder=" " required></textarea>
+                    <label for="mensaje">Mensaje o solicitud especial</label>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Reserva</button>
+            </form>
+        </div>
+
+        <div class="contact-image"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <span class="footer-logo">Arábica</span>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">TikTok</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Arábica Coffee. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
