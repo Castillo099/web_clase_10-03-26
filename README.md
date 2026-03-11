@@ -1,4 +1,3 @@
-Aquí tienes un README.md profesional y completo para el proyecto de la cafetería Arábica:
 
 ```markdown
 # ☕ Arábica - Café de Especialidad
